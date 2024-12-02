@@ -9,8 +9,233 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Italiana&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="font-gabriela">
+		<header class="py-6 fixed flex justify-center items-center gap-16 left-0 right-0 top-0 text-white">
+			<nav class="flex gap-16">
+				<a href="">О выставке</a>
+				<a href="">Художники</a>
+			</nav>
+			<a href="/" class="text-[40px] leading-none font-italiana">ArtDeco</a>
+			<nav class="flex gap-16">
+				<a href="">Экспонаты</a>
+				<a href="">Контакты</a>
+			</nav>
+		</header>
+
+		<section class="flex flex-col items-center justify-center h-[500px] max-w-[1200px] mx-auto px-4 bg-[#EA1800]">
+			<div class="text-center font-italiana text-white leading-none mb-4">
+				<p class="text-[128px]">DESIGN</p>
+				<p class="text-[128px]">ART SPACE</p>
+			</div>
+			
+			<!-- Вставленный SVG блок -->
+			<div class="w-full flex justify-center mt-4">
+				<svg width="1200" height="70" viewBox="0 0 1200 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="44.5" x2="44.5" y2="70" stroke="white"/>
+					<line x1="38.5" y1="10" x2="38.5" y2="60" stroke="#818181"/>
+					<line x1="26.5" y1="10" x2="26.5" y2="60" stroke="white"/>
+					<line x1="20.5" y1="20" x2="20.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="32.5" y1="5" x2="32.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="14.5" y1="5" x2="14.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="1186.5" x2="1186.5" y2="70" stroke="white"/>
+					<line x1="1180.5" y1="10" x2="1180.5" y2="60" stroke="#818181"/>
+					<line x1="1168.5" y1="10" x2="1168.5" y2="60" stroke="white"/>
+					<line x1="1162.5" y1="20" x2="1162.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="1174.5" y1="5" x2="1174.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="1129.5" y1="10" x2="1129.5" y2="60" stroke="white"/>
+					<line x1="1135.5" y1="5" x2="1135.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="1152.5" y1="10" x2="1152.5" y2="60" stroke="#818181"/>
+					<line x1="1140.5" y1="10" x2="1140.5" y2="60" stroke="white"/>
+					<line x1="1146.5" y1="5" x2="1146.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="1156.5" y1="5" x2="1156.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="764.5" x2="764.5" y2="70" stroke="white"/>
+					<line x1="758.5" y1="10" x2="758.5" y2="60" stroke="#818181"/>
+					<line x1="746.5" y1="10" x2="746.5" y2="60" stroke="white"/>
+					<line x1="740.5" y1="20" x2="740.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="752.5" y1="5" x2="752.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="734.5" y1="5" x2="734.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="800.5" x2="800.5" y2="70" stroke="white"/>
+					<line x1="794.5" y1="10" x2="794.5" y2="60" stroke="#818181"/>
+					<line x1="782.5" y1="10" x2="782.5" y2="60" stroke="white"/>
+					<line x1="776.5" y1="20" x2="776.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="788.5" y1="5" x2="788.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="770.5" y1="5" x2="770.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="836.5" x2="836.5" y2="70" stroke="white"/>
+					<line x1="830.5" y1="10" x2="830.5" y2="60" stroke="#818181"/>
+					<line x1="818.5" y1="10" x2="818.5" y2="60" stroke="white"/>
+					<line x1="812.5" y1="20" x2="812.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="824.5" y1="5" x2="824.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="806.5" y1="5" x2="806.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="872.5" x2="872.5" y2="70" stroke="white"/>
+					<line x1="866.5" y1="10" x2="866.5" y2="60" stroke="#818181"/>
+					<line x1="854.5" y1="10" x2="854.5" y2="60" stroke="white"/>
+					<line x1="848.5" y1="20" x2="848.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="860.5" y1="5" x2="860.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="842.5" y1="5" x2="842.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="908.5" x2="908.5" y2="70" stroke="white"/>
+					<line x1="902.5" y1="10" x2="902.5" y2="60" stroke="#818181"/>
+					<line x1="890.5" y1="10" x2="890.5" y2="60" stroke="white"/>
+					<line x1="884.5" y1="20" x2="884.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="896.5" y1="5" x2="896.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="878.5" y1="5" x2="878.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="944.5" x2="944.5" y2="70" stroke="white"/>
+					<line x1="938.5" y1="10" x2="938.5" y2="60" stroke="#818181"/>
+					<line x1="926.5" y1="10" x2="926.5" y2="60" stroke="white"/>
+					<line x1="920.5" y1="20" x2="920.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="932.5" y1="5" x2="932.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="914.5" y1="5" x2="914.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="980.5" x2="980.5" y2="70" stroke="white"/>
+					<line x1="974.5" y1="10" x2="974.5" y2="60" stroke="#818181"/>
+					<line x1="962.5" y1="10" x2="962.5" y2="60" stroke="white"/>
+					<line x1="956.5" y1="20" x2="956.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="968.5" y1="5" x2="968.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="950.5" y1="5" x2="950.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="1016.5" x2="1016.5" y2="70" stroke="white"/>
+					<line x1="1010.5" y1="10" x2="1010.5" y2="60" stroke="#818181"/>
+					<line x1="998.5" y1="10" x2="998.5" y2="60" stroke="white"/>
+					<line x1="992.5" y1="20" x2="992.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="1004.5" y1="5" x2="1004.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="986.5" y1="5" x2="986.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="1052.5" x2="1052.5" y2="70" stroke="white"/>
+					<line x1="1046.5" y1="10" x2="1046.5" y2="60" stroke="#818181"/>
+					<line x1="1034.5" y1="10" x2="1034.5" y2="60" stroke="white"/>
+					<line x1="1028.5" y1="20" x2="1028.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="1040.5" y1="5" x2="1040.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="1022.5" y1="5" x2="1022.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="1088.5" x2="1088.5" y2="70" stroke="white"/>
+					<line x1="1082.5" y1="10" x2="1082.5" y2="60" stroke="#818181"/>
+					<line x1="1070.5" y1="10" x2="1070.5" y2="60" stroke="white"/>
+					<line x1="1064.5" y1="20" x2="1064.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="1076.5" y1="5" x2="1076.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="1058.5" y1="5" x2="1058.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="1124.5" x2="1124.5" y2="70" stroke="white"/>
+					<line x1="1118.5" y1="10" x2="1118.5" y2="60" stroke="#818181"/>
+					<line x1="1106.5" y1="10" x2="1106.5" y2="60" stroke="white"/>
+					<line x1="1100.5" y1="20" x2="1100.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="1112.5" y1="5" x2="1112.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="1094.5" y1="5" x2="1094.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="476.5" x2="476.5" y2="70" stroke="white"/>
+					<line x1="470.5" y1="10" x2="470.5" y2="60" stroke="#818181"/>
+					<line x1="458.5" y1="10" x2="458.5" y2="60" stroke="white"/>
+					<line x1="452.5" y1="20" x2="452.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="464.5" y1="5" x2="464.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="446.5" y1="5" x2="446.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="512.5" x2="512.5" y2="70" stroke="white"/>
+					<line x1="506.5" y1="10" x2="506.5" y2="60" stroke="#818181"/>
+					<line x1="494.5" y1="10" x2="494.5" y2="60" stroke="white"/>
+					<line x1="488.5" y1="20" x2="488.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="500.5" y1="5" x2="500.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="482.5" y1="5" x2="482.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="548.5" x2="548.5" y2="70" stroke="white"/>
+					<line x1="542.5" y1="10" x2="542.5" y2="60" stroke="#818181"/>
+					<line x1="530.5" y1="10" x2="530.5" y2="60" stroke="white"/>
+					<line x1="524.5" y1="20" x2="524.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="536.5" y1="5" x2="536.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="518.5" y1="5" x2="518.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="584.5" x2="584.5" y2="70" stroke="white"/>
+					<line x1="578.5" y1="10" x2="578.5" y2="60" stroke="#818181"/>
+					<line x1="566.5" y1="10" x2="566.5" y2="60" stroke="white"/>
+					<line x1="560.5" y1="20" x2="560.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="572.5" y1="5" x2="572.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="554.5" y1="5" x2="554.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="620.5" x2="620.5" y2="70" stroke="white"/>
+					<line x1="614.5" y1="10" x2="614.5" y2="60" stroke="#818181"/>
+					<line x1="602.5" y1="10" x2="602.5" y2="60" stroke="white"/>
+					<line x1="596.5" y1="20" x2="596.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="608.5" y1="5" x2="608.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="590.5" y1="5" x2="590.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="656.5" x2="656.5" y2="70" stroke="white"/>
+					<line x1="650.5" y1="10" x2="650.5" y2="60" stroke="#818181"/>
+					<line x1="638.5" y1="10" x2="638.5" y2="60" stroke="white"/>
+					<line x1="632.5" y1="20" x2="632.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="644.5" y1="5" x2="644.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="626.5" y1="5" x2="626.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="692.5" x2="692.5" y2="70" stroke="white"/>
+					<line x1="686.5" y1="10" x2="686.5" y2="60" stroke="#818181"/>
+					<line x1="674.5" y1="10" x2="674.5" y2="60" stroke="white"/>
+					<line x1="668.5" y1="20" x2="668.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="680.5" y1="5" x2="680.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="662.5" y1="5" x2="662.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="728.5" x2="728.5" y2="70" stroke="white"/>
+					<line x1="722.5" y1="10" x2="722.5" y2="60" stroke="#818181"/>
+					<line x1="710.5" y1="10" x2="710.5" y2="60" stroke="white"/>
+					<line x1="704.5" y1="20" x2="704.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="716.5" y1="5" x2="716.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="698.5" y1="5" x2="698.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="332.5" x2="332.5" y2="70" stroke="white"/>
+					<line x1="326.5" y1="10" x2="326.5" y2="60" stroke="#818181"/>
+					<line x1="314.5" y1="10" x2="314.5" y2="60" stroke="white"/>
+					<line x1="308.5" y1="20" x2="308.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="320.5" y1="5" x2="320.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="302.5" y1="5" x2="302.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="368.5" x2="368.5" y2="70" stroke="white"/>
+					<line x1="362.5" y1="10" x2="362.5" y2="60" stroke="#818181"/>
+					<line x1="350.5" y1="10" x2="350.5" y2="60" stroke="white"/>
+					<line x1="344.5" y1="20" x2="344.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="356.5" y1="5" x2="356.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="338.5" y1="5" x2="338.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="404.5" x2="404.5" y2="70" stroke="white"/>
+					<line x1="398.5" y1="10" x2="398.5" y2="60" stroke="#818181"/>
+					<line x1="386.5" y1="10" x2="386.5" y2="60" stroke="white"/>
+					<line x1="380.5" y1="20" x2="380.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="392.5" y1="5" x2="392.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="374.5" y1="5" x2="374.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="440.5" x2="440.5" y2="70" stroke="white"/>
+					<line x1="434.5" y1="10" x2="434.5" y2="60" stroke="#818181"/>
+					<line x1="422.5" y1="10" x2="422.5" y2="60" stroke="white"/>
+					<line x1="416.5" y1="20" x2="416.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="428.5" y1="5" x2="428.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="410.5" y1="5" x2="410.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="80.5" x2="80.5" y2="70" stroke="white"/>
+					<line x1="74.5" y1="10" x2="74.5" y2="60" stroke="#818181"/>
+					<line x1="62.5" y1="10" x2="62.5" y2="60" stroke="white"/>
+					<line x1="56.5" y1="20" x2="56.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="68.5" y1="5" x2="68.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="50.5" y1="5" x2="50.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="116.5" x2="116.5" y2="70" stroke="white"/>
+					<line x1="110.5" y1="10" x2="110.5" y2="60" stroke="#818181"/>
+					<line x1="98.5" y1="10" x2="98.5" y2="60" stroke="white"/>
+					<line x1="92.5" y1="20" x2="92.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="104.5" y1="5" x2="104.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="86.5" y1="5" x2="86.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="152.5" x2="152.5" y2="70" stroke="white"/>
+					<line x1="146.5" y1="10" x2="146.5" y2="60" stroke="#818181"/>
+					<line x1="134.5" y1="10" x2="134.5" y2="60" stroke="white"/>
+					<line x1="128.5" y1="20" x2="128.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="140.5" y1="5" x2="140.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="122.5" y1="5" x2="122.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="188.5" x2="188.5" y2="70" stroke="white"/>
+					<line x1="182.5" y1="10" x2="182.5" y2="60" stroke="#818181"/>
+					<line x1="170.5" y1="10" x2="170.5" y2="60" stroke="white"/>
+					<line x1="164.5" y1="20" x2="164.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="176.5" y1="5" x2="176.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="158.5" y1="5" x2="158.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="224.5" x2="224.5" y2="70" stroke="white"/>
+					<line x1="218.5" y1="10" x2="218.5" y2="60" stroke="#818181"/>
+					<line x1="206.5" y1="10" x2="206.5" y2="60" stroke="white"/>
+					<line x1="200.5" y1="20" x2="200.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="212.5" y1="5" x2="212.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="194.5" y1="5" x2="194.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="260.5" x2="260.5" y2="70" stroke="white"/>
+					<line x1="254.5" y1="10" x2="254.5" y2="60" stroke="#818181"/>
+					<line x1="242.5" y1="10" x2="242.5" y2="60" stroke="white"/>
+					<line x1="236.5" y1="20" x2="236.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="248.5" y1="5" x2="248.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="230.5" y1="5" x2="230.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="296.5" x2="296.5" y2="70" stroke="white"/>
+					<line x1="290.5" y1="10" x2="290.5" y2="60" stroke="#818181"/>
+					<line x1="278.5" y1="10" x2="278.5" y2="60" stroke="white"/>
+					<line x1="272.5" y1="20" x2="272.5" y2="50" stroke="#A8A8A8"/>
+					<line x1="284.5" y1="5" x2="284.5" y2="65" stroke="#BEBEBE"/>
+					<line x1="266.5" y1="5" x2="266.5" y2="65" stroke="#C4C4C4"/>
+					<line x1="-100" y1="36.5" x2="1300" y2="36.5" stroke="#B0B0B0"/>
+				</svg>
+				</svg>
+			</div>
+		</section>
 	</body>
 </html>
